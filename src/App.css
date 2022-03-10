@@ -10,10 +10,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  perspective: 1000px;
+  overflow: hidden;
 }
 
 .heading {
-  margin-left: 55%;
+  transition: 1s;
+  transition-delay: 0.6s;
 }
 
 .phone,
@@ -22,7 +25,9 @@ body {
   background: #fff;
   position: absolute;
   transition: 1s;
-  box-shadow: 5px 0 20px red;
+  box-shadow: 13px 13px 32px 0 red;
+  border-radius: 15px;
+  transform: translateY(100%);
 }
 
 .phone {
@@ -33,6 +38,7 @@ body {
   z-index: 3;
   background: #fff url(./img/Screenshot_2.png) center;
   background-size: cover;
+  transition-delay: 0.2s;
 }
 
 .tablet {
@@ -43,14 +49,29 @@ body {
   z-index: 2;
   background: #fff url(./img/Screenshot_2.png) center;
   background-size: cover;
+  transition-delay: 0.4s;
 }
 
 .desctop {
-  width: 510px;
+  width: 680px;
   height: 480px;
   bottom: 0;
   left: 15%;
   z-index: 1;
-  background: #fff url(./img/Screenshot_2.png) center;
+  background: #fff url(./img/Screenshot_3.jpg) center;
   background-size: cover;
+  transition-delay: 0.6s;
+}
+
+.section:hover .heading {
+  transform: translateY(-160px);
+}
+.section:hover .phone,
+.section:hover .tablet,
+.section:hover .desctop {
+  transform: translateY(-5px) rotateY(-20deg);
+}
+
+.desctop:hover {
+  z-index: 3;
 }
