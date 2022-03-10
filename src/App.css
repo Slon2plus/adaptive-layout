@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+}
+
+.section {
+  background: #b00b1e;
+  height: 100vh;
+  position: relative;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  margin-left: 55%;
+}
+
+.phone,
+.tablet,
+.desctop {
+  background: #fff;
+  position: absolute;
+  transition: 1s;
+  box-shadow: 5px 0 20px red;
+}
+
+.phone {
+  width: 200px;
+  height: 280px;
+  bottom: 0;
+  left: 5%;
+  z-index: 3;
+  background: #fff url(./img/Screenshot_2.png) center;
+  background-size: cover;
+}
+
+.tablet {
+  width: 300px;
+  height: 380px;
+  bottom: 0;
+  left: 10%;
+  z-index: 2;
+  background: #fff url(./img/Screenshot_2.png) center;
+  background-size: cover;
+}
+
+.desctop {
+  width: 510px;
+  height: 480px;
+  bottom: 0;
+  left: 15%;
+  z-index: 1;
+  background: #fff url(./img/Screenshot_2.png) center;
+  background-size: cover;
+}
