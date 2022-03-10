@@ -71,7 +71,3 @@ body {
 .section:hover .desctop {
   transform: translateY(-5px) rotateY(-20deg);
 }
-
-.desctop:hover {
-  z-index: 3;
-}
